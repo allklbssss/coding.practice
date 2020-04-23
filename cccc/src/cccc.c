@@ -28,6 +28,7 @@ int main(void)
       scanf("%f", &b[i]); }
  printf("Operation(+-*):");
  scanf(" %c%*c", &s);
+ printf("Result:\n");
  switch(s){
  case '+':
     for (int i = 0; i < size; i++){
@@ -46,5 +47,7 @@ int main(void)
      printf("Unknown operation.\n");
 } printf("Continue?(y/n): ");
   scanf(" %c", &q);
+  free(a);
+  free(b);
  }while(q=='y');
 }
